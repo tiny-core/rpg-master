@@ -12,7 +12,7 @@
 		"node": true
 	},
 	"scripts": {
-		"dev": "pnpm -r dev",
+		"dev": "pnpm -r tauri dev",
 		"schemas": "pnpm --filter @rpg-master/schemas",
 		"master": "pnpm --filter @rpg-master/master",
 		"player": "pnpm --filter @rpg-master/player",
