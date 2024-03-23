@@ -1,0 +1,11 @@
+{
+	"name": "@rpg-master/schemas",
+	"version": "1.0.0",
+	"description": "RPG Master Schemas",
+	"private": true,
+	"main": "./src/index.ts",
+	"types": "types/index.d.ts",
+	"dependencies": {
+		"zod": "^3.22.4"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	// https://nuxt.com/docs/guide/concepts/typescript
+	"compilerOptions": {
+		"declaration": true,
+		"declarationDir": "./types"
+	}
+}
