@@ -1,0 +1,46 @@
+{
+	"folders": [
+		{ "name": "Root", "path": "." },
+		{ "name": "Schemas", "path": "./packages/schemas" },
+		{ "name": "Master", "path": "./packages/master" },
+		{ "name": "Player", "path": "./packages/player" }
+	],
+
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/Thumbs.db": true,
+			"node_modules": true,
+			"packages": true
+		},
+
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true,
+
+		"editor.codeActionsOnSave": {
+			"source.fixAll": "always"
+		},
+
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+
+		"editor.quickSuggestions": {
+			"strings": true
+		},
+
+		"[rust]": {
+			"editor.defaultFormatter": "rust-lang.rust-analyzer"
+		}
+	},
+
+	"extensions": {
+		"recommendations": [
+			"esbenp.prettier-vscode",
+			"dbaeumer.vscode-eslint",
+			"rust-lang.rust-analyzer"
+		]
+	}
+}
