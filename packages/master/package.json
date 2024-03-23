@@ -1,0 +1,36 @@
+{
+	"name": "@rpg-master/master",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"nuxi": "nuxi",
+		"tauri": "tauri"
+	},
+	"dependencies": {
+		"@rpg-master/schemas": "workspace:^",
+		"@tauri-apps/api": "^1.5.3",
+		"nuxt": "^3.11.1",
+		"tauri-plugin-store-api": "github:tauri-apps/tauri-plugin-store#v1",
+		"vue": "^3.4.21",
+		"vue-router": "^4.3.0"
+	},
+	"devDependencies": {
+		"@fortawesome/fontawesome-svg-core": "^6.5.1",
+		"@fortawesome/free-brands-svg-icons": "^6.5.1",
+		"@fortawesome/free-regular-svg-icons": "^6.5.1",
+		"@fortawesome/free-solid-svg-icons": "^6.5.1",
+		"@fortawesome/vue-fontawesome": "^3.0.6",
+		"@hypernym/nuxt-anime": "^2.1.1",
+		"@pinia/nuxt": "^0.5.1",
+		"@tauri-apps/cli": "^1.5.11",
+		"nuxt-typed-router": "^3.6.1",
+		"sass": "^1.72.0",
+		"vuetify-nuxt-module": "^0.12.0"
+	}
+}

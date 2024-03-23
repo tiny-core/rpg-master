@@ -1,0 +1,71 @@
+{
+	"$schema": "../node_modules/@tauri-apps/cli/schema.json",
+	"build": {
+		"beforeBuildCommand": "pnpm generate",
+		"beforeDevCommand": "pnpm dev",
+		"devPath": "http://localhost:3000",
+		"distDir": "../dist"
+	},
+	"package": {
+		"productName": "rpg-master",
+		"version": "../package.json"
+	},
+	"tauri": {
+		"allowlist": { "all": false },
+
+		"bundle": {
+			"active": true,
+
+			"category": "DeveloperTool",
+			"identifier": "com.rpg-master.dev",
+			"copyright": "Tiny Core 2024",
+
+			"longDescription": "",
+			"shortDescription": "",
+
+			"targets": "all",
+
+			"externalBin": [],
+			"resources": [],
+
+			"deb": { "depends": [] },
+
+			"icon": [
+				"icons/32x32.png",
+				"icons/128x128.png",
+				"icons/128x128@2x.png",
+				"icons/icon.icns",
+				"icons/icon.ico"
+			],
+
+			"macOS": {
+				"entitlements": null,
+				"exceptionDomain": "",
+				"frameworks": [],
+				"providerShortName": null,
+				"signingIdentity": null
+			},
+
+			"windows": {
+				"certificateThumbprint": null,
+				"digestAlgorithm": "sha256",
+				"timestampUrl": ""
+			}
+		},
+
+		"security": { "csp": null },
+
+		"updater": { "active": false },
+
+		"windows": [
+			{
+				"title": "RPG Master",
+				"fullscreen": false,
+				"resizable": true,
+				"center": true,
+				"height": 400,
+				"width": 800
+			}
+		]
+	}
+}
