@@ -15,6 +15,7 @@
 	"dependencies": {
 		"@rpg-master/schemas": "workspace:^",
 		"@tauri-apps/api": "^1.5.3",
+		"dotenv": "^16.4.5",
 		"nuxt": "^3.11.1",
 		"tauri-plugin-store-api": "github:tauri-apps/tauri-plugin-store#v1",
 		"vue": "^3.4.21",
@@ -30,6 +31,7 @@
 		"@pinia/nuxt": "^0.5.1",
 		"@tauri-apps/cli": "^1.5.11",
 		"nuxt-typed-router": "^3.6.1",
+		"nuxt-vuefire": "^1.0.2",
 		"sass": "^1.72.0",
 		"vuetify-nuxt-module": "^0.12.0"
 	}

@@ -11,7 +11,7 @@
 		"version": "../package.json"
 	},
 	"tauri": {
-		"allowlist": { "all": false },
+		"allowlist": { "all": false, "window": { "all": true } },
 
 		"bundle": {
 			"active": true,
