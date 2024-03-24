@@ -34,6 +34,12 @@ export default defineNuxtConfig({
 
 	imports: { dirs: ['utils'] },
 
+	runtimeConfig: {
+		public: {
+			NODE_ENV: process.env.NODE_ENV
+		}
+	},
+
 	vite: {
 		// prevent vite from obscuring rust errors
 		clearScreen: true,

@@ -19,7 +19,7 @@ onMounted(() => {
 
 <template>
 	<v-app>
-		<NuxtLayout>
+		<NuxtLayout data-tauri-drag-region>
 			<NuxtPage />
 		</NuxtLayout>
 	</v-app>
@@ -29,11 +29,16 @@ onMounted(() => {
 body,
 html {
 	overflow: hidden;
+	border-radius: 10px;
 }
 
 .bg-image {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+* {
+	user-select: none;
 }
 </style>
