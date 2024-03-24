@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	modules: ['nuxt-typed-router', '@hypernym/nuxt-anime', 'vuetify-nuxt-module'],
+	modules: ['nuxt-typed-router', '@hypernym/nuxt-anime', 'vuetify-nuxt-module', 'nuxt-vuefire'],
 
 	//------------------------------------------------------------------------------------------------
 	//   Module configurations
@@ -9,6 +9,20 @@ export default defineNuxtConfig({
 	anime: { composables: true },
 
 	vuetify: { vuetifyOptions: './vuetify.config.ts' },
+
+	vuefire: {
+		auth: { enabled: true },
+
+		config: {
+			apiKey: process.env.VUEFIRE_API_KEY,
+			authDomain: process.env.VUEFIRE_AUTH_DOMAIN,
+			projectId: process.env.VUEFIRE_PROJECT_ID,
+			appId: process.env.VUEFIRE_APP_ID,
+			measurementId: process.env.VUEFIRE_MEASUREMENT_ID,
+			storageBucket: process.env.VUEFIRE_STORAGE_BUCKET,
+			messagingSenderId: process.env.VUEFIRE_MESSAGING_SENDER_ID
+		}
+	},
 
 	//------------------------------------------------------------------------------------------------
 
