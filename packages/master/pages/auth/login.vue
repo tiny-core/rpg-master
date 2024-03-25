@@ -26,10 +26,10 @@ onMounted(() => signIn())
 </script>
 
 <template>
-	<v-container class="fill-height">
+	<v-container class="fill-height" data-tauri-drag-region>
 		<v-row justify="center" align="center">
 			<v-col v-if="error" cols="12" class="text-center">
-				<div>{{ error }}</div>
+				<div data-tauri-drag-region>{{ error }}</div>
 				<v-divider class="my-3" />
 				<v-btn prepend-icon="fab fa-google" @click="signIn">Login</v-btn>
 			</v-col>

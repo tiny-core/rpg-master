@@ -108,9 +108,9 @@ importers:
       '@tauri-apps/api':
         specifier: ^1.5.3
         version: 1.5.3
-      dotenv:
-        specifier: ^16.4.5
-        version: 16.4.5
+      filesize:
+        specifier: ^10.1.1
+        version: 10.1.1
       nuxt:
         specifier: ^3.11.1
         version: 3.11.1(@unocss/reset@0.58.6)(eslint@8.57.0)(floating-vue@5.2.2)(sass@1.72.0)(typescript@5.4.3)(unocss@0.58.6)(vite@5.2.4)(vue-tsc@1.8.27)

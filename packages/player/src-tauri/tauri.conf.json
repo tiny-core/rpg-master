@@ -38,33 +38,41 @@
 				"icons/icon.ico"
 			],
 
-			"macOS": {
-				"entitlements": null,
-				"exceptionDomain": "",
-				"frameworks": [],
-				"providerShortName": null,
-				"signingIdentity": null
-			},
-
 			"windows": {
-				"certificateThumbprint": null,
+				"certificateThumbprint": "892725A19A2B42075AFF7A32E2BA7C5142048497",
 				"digestAlgorithm": "sha256",
-				"timestampUrl": ""
+				"timestampUrl": "http://timestamp.sectigo.com"
 			}
 		},
 
 		"security": { "csp": null },
 
-		"updater": { "active": false },
+		"updater": {
+			"active": true,
+			"dialog": false,
+
+			"endpoints": [
+				"https://raw.githubusercontent.com/tiny-core/rpg-master/main/packages/master/updater.json"
+			],
+
+			"pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDJCMENFOEJGNUZGRDVGNTUKUldSVlgvMWZ2K2dNSzZyS1NuL3JEMlZsUzBEWWNVNGp1eTF6OEZ0SisrblVGam5BRmRZbVpka0UK",
+
+			"windows": {
+				"installMode": "passive",
+				"installerArgs": []
+			}
+		},
 
 		"windows": [
 			{
 				"title": "RPG Master Player",
+				"decorations": false,
+				"transparent": true,
 				"fullscreen": false,
-				"resizable": true,
+				"resizable": false,
 				"center": true,
 				"height": 400,
-				"width": 800
+				"width": 700
 			}
 		]
 	}

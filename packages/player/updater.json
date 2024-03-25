@@ -1,0 +1,12 @@
+{
+	"version": "v1.0.0",
+	"notes": "Test version",
+	"pub_date": "2024-03-24T16:21:57Z",
+
+	"platforms": {
+		"windows-x86_64": {
+			"signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVlgvMWZ2K2dNS3o2a3FwQlJmVUp6U2RjaDl5MHlaQVY3TVd1d1BUUzNEL1dtdGwrc2lLUDRWNG5Jb0trdXpoUSsxNDBFVjdwWFhzWFZWMFo0Um8xU05zVFBTc3J6WEF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzExMjk3MjAxCWZpbGU6cnBnLW1hc3Rlcl8xLjAuMF94NjQtc2V0dXAubnNpcy56aXAKUU9RQkFSNDZPS0RBVnlBKzQxRVBMVmpkclEzMDkxZkYwVW0xSVd2RUIvMkJQbEZac0lIRTlSem1tS3U5dUZiZUpVaUxtK1pEVXF1d1lVU1RRdFZ4QXc9PQo=",
+			"url": "https://github.com/tiny-core/rpg-master/releases/download/v1.0.0/rpg-master-player_1.0.0_x64-setup.nsis.zip"
+		}
+	}
+}

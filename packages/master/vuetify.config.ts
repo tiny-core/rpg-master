@@ -14,6 +14,7 @@ export default defineVuetifyConfiguration({
 			}
 		}
 	},
+
 	icons: {
 		defaultSet: 'fa-svg',
 		svg: {

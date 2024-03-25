@@ -43,14 +43,6 @@
 				"icons/icon.ico"
 			],
 
-			"macOS": {
-				"entitlements": null,
-				"exceptionDomain": "",
-				"frameworks": [],
-				"providerShortName": null,
-				"signingIdentity": null
-			},
-
 			"windows": {
 				"certificateThumbprint": "892725A19A2B42075AFF7A32E2BA7C5142048497",
 				"digestAlgorithm": "sha256",

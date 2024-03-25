@@ -24,6 +24,13 @@ export default defineNuxtConfig({
 			measurementId: process.env.VUEFIRE_MEASUREMENT_ID,
 			storageBucket: process.env.VUEFIRE_STORAGE_BUCKET,
 			messagingSenderId: process.env.VUEFIRE_MESSAGING_SENDER_ID
+		},
+
+		appCheck: {
+			debug: process.env.NODE_ENV !== 'production',
+			isTokenAutoRefreshEnabled: true,
+			provider: 'ReCaptchaEnterprise',
+			key: process.env.RECAPTCHA_KEY || ''
 		}
 	},
 

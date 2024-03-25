@@ -5,8 +5,8 @@
 	"type": "module",
 	"scripts": {
 		"build": "nuxt build",
-		"dev": "nuxt dev",
-		"generate": "nuxt generate",
+		"dev": "nuxt dev --dotenv ../../.env.development",
+		"generate": "nuxt generate --dotenv ../../.env.production",
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare",
 		"nuxi": "nuxi",
@@ -15,7 +15,7 @@
 	"dependencies": {
 		"@rpg-master/schemas": "workspace:^",
 		"@tauri-apps/api": "^1.5.3",
-		"dotenv": "^16.4.5",
+		"filesize": "^10.1.1",
 		"nuxt": "^3.11.1",
 		"tauri-plugin-store-api": "github:tauri-apps/tauri-plugin-store#v1",
 		"vue": "^3.4.21",
