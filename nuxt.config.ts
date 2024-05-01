@@ -41,7 +41,7 @@ export default defineNuxtConfig({
 
 	devServer: { port: 3000 },
 
-	imports: { dirs: ['stores', 'schemas'] },
+	imports: { dirs: ['store', 'schemas'] },
 
 	css: ['~~/assets/scss/main.scss'],
 

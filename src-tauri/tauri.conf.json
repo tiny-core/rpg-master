@@ -55,7 +55,17 @@
 		},
 
 		"updater": {
-			"active": false
+			"active": true,
+			"dialog": false,
+
+			"endpoints": ["https://rpg-master-core.web.app"],
+
+			"pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDJCMENFOEJGNUZGRDVGNTUKUldSVlgvMWZ2K2dNSzZyS1NuL3JEMlZsUzBEWWNVNGp1eTF6OEZ0SisrblVGam5BRmRZbVpka0UK",
+
+			"windows": {
+				"installMode": "basicUi",
+				"installerArgs": []
+			}
 		},
 
 		"windows": [

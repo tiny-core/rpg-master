@@ -2,7 +2,7 @@
 
 <template>
 	<v-main>
-		<v-container fluid>
+		<v-container class="fill-height" fluid data-tauri-drag-region>
 			<slot />
 		</v-container>
 	</v-main>
