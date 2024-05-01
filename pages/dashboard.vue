@@ -1,6 +1,4 @@
 <script setup lang="ts">
-definePageMeta({ layout: 'blank' })
-
 const route = useRoute()
 </script>
 

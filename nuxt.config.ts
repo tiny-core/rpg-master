@@ -43,6 +43,8 @@ export default defineNuxtConfig({
 
 	imports: { dirs: ['stores', 'schemas'] },
 
+	css: ['~~/assets/scss/main.scss'],
+
 	vuetify: { vuetifyOptions: './vuetify.config.ts' },
 
 	runtimeConfig: {

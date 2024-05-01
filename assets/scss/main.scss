@@ -1,0 +1,12 @@
+body,
+html {
+	overflow: hidden;
+}
+
+* {
+	user-select: none;
+}
+
+.v-main > .v-container {
+	height: calc(100vh - var(--v-layout-top) - var(--v-layout-bottom));
+}
