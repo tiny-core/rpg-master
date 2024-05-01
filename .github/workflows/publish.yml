@@ -66,6 +66,8 @@ jobs:
           Import-PfxCertificate -FilePath certificate/certificate.pfx -CertStoreLocation Cert:\CurrentUser\My -Password (ConvertTo-SecureString -String $env:WINDOWS_CERTIFICATE_PASSWORD -Force -AsPlainText)
 
       - name: install app dependencies and build it
+        env:
+          TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
         run: pnpm install && pnpm build
 
       - uses: tauri-apps/tauri-action@v0
