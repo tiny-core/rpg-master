@@ -1,0 +1,89 @@
+{
+	"$schema": "../node_modules/@tauri-apps/cli/schema.json",
+
+	"build": {
+		"beforeBuildCommand": "pnpm nuxt:generate",
+		"beforeDevCommand": "pnpm nuxt:dev",
+		"devPath": "http://localhost:3000",
+		"distDir": "../.output/public"
+	},
+
+	"package": {
+		"productName": "rpg-master",
+		"version": "../package.json"
+	},
+
+	"tauri": {
+		"allowlist": {
+			"all": false,
+			"window": { "all": true },
+			"process": { "all": false, "exit": true, "relaunch": true }
+		},
+
+		"bundle": {
+			"active": true,
+			"category": "BoardGame",
+			"copyright": "Tiny Core © 2024",
+			"identifier": "app.web.rpg-master-core",
+			"shortDescription": "",
+			"longDescription": "",
+
+			"targets": "all",
+
+			"deb": { "depends": [] },
+
+			"externalBin": [],
+			"resources": [],
+
+			"icon": [
+				"icons/32x32.png",
+				"icons/128x128.png",
+				"icons/128x128@2x.png",
+				"icons/icon.icns",
+				"icons/icon.ico"
+			],
+
+			"windows": {
+				"certificateThumbprint": "892725A19A2B42075AFF7A32E2BA7C5142048497",
+				"digestAlgorithm": "sha256",
+				"timestampUrl": "http://timestamp.sectigo.com"
+			}
+		},
+
+		"security": {
+			"csp": "script-src 'strict-dynamic' 'nonce-rAnd0m123' 'unsafe-inline' http: https:; object-src 'none'; base-uri 'none'; require-trusted-types-for 'script'; report-uri rpg-master-core.web.app/csp;"
+		},
+
+		"updater": {
+			"active": false
+		},
+
+		"windows": [
+			{
+				"title": "app.title",
+				"label": "splash-screen",
+				"url": "/",
+				"decorations": false,
+				"transparent": true,
+				"fullscreen": false,
+				"resizable": false,
+				"center": true,
+				"height": 400,
+				"width": 700
+			},
+			{
+				"title": "app.title",
+				"label": "main",
+				"url": "/dashboard",
+				"decorations": false,
+				"transparent": true,
+				"fullscreen": false,
+				"resizable": false,
+				"center": true,
+				"visible": false,
+				"height": 550,
+				"width": 950
+			}
+		]
+	}
+}
